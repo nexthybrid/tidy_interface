@@ -6,6 +6,8 @@
 Welcome to tiny_interface's documentation!
 ==========================================
 
+**tiny_interface** has its documentation hosted on Read the Docs.
+
 .. toctree::
    :maxdepth: 2
    :caption: Contents:

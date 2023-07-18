@@ -1,0 +1,3 @@
+signal name,unit,default value,size
+gearNumber,UInt8,0,[1]
+vehicleSpeed,Float16,0,[1]

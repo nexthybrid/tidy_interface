@@ -6,7 +6,6 @@
 Welcome to tiny_interface's documentation!
 ==========================================
 
-**tiny_interface** has its documentation hosted on Read the Docs.
 
 .. toctree::
    :maxdepth: 2
@@ -20,3 +19,5 @@ Indices and tables
 * :ref:`genindex`
 * :ref:`modindex`
 * :ref:`search`
+
+**tiny_interface** has its documentation hosted on Read the Docs.

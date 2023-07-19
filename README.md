@@ -1,5 +1,5 @@
 # tidy_interface
-A signal interface management tool. Detailed documentation can be found [here](https://tidy-interface.readthedocs.io/en/main/).
+A signal interface management tool. Detailed documentation can be found [here](https://tidy-interface.readthedocs.io/en/).
 
 # Dependencies
 This tool uses Python, Django, SQLite3, pyyaml for database management. (A requirements.txt will be generated later, TBD. For now, manual installation. Tested on python 3.10.10)

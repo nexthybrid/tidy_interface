@@ -1,7 +1,8 @@
 tidy_interface
 ==============
 
-[![Documentation Status](https://readthedocs.org/projects/tidy-interface/badge/?version=latest)](https://tidy-interface.readthedocs.io/en/latest/?badge=latest)
+|docs|
+
 **tidy_interface** is a signal interface management tool for managing interface signals across different versions. Detailed documentation can be found [here](https://tidy-interface.readthedocs.io/en/).
 
 Dependencies
@@ -32,3 +33,6 @@ Verify Django installation by going into python terminal:
 
 SQLite3 is not directly available through pip. Install SQLite3 from [official website](https://www.sqlite.org/download.html) for viewing the data tables.
 
+.. |docs| image:: https://readthedocs.org/projects/tidy-interface/badge/?version=stable
+    :target: https://tidy-interface.readthedocs.io/en/latest/?badge=stable
+    :alt: Documentation Status (stable)

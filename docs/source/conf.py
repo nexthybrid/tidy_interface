@@ -11,7 +11,7 @@ copyright = '2023, Tong Zhao'
 author = 'Tong Zhao'
 
 release = '0.1'
-version = '0.1.0'
+version = '0.1.1'
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration

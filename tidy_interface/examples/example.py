@@ -1,12 +1,25 @@
 # Example usage of the SignalManager class.
 # This usage resembles the prototype scripts in the sql.ipynb notebook, but is more concise with a class.
-from signal_manager import SignalManager
+import os
+import pkg_resources
+from tidy_interface.signal_manager import SignalManager
+
+
+def get_example_data_file():
+    package_name = 'tidy_interface'
+    filename = 'example_data/signals_from_csv.csv'
+
+    file_path = pkg_resources.resource_filename(package_name, filename)
+    return file_path
+
 
 db_file = 'signals.db'
 mgr = SignalManager(db_file)
 
 mgr.create_database()
-mgr.import_data('signals_from_csv.csv', '1.0.0')
+# data_file_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "example_data", "signals_from_csv.csv")
+data_file_path = get_example_data_file()
+mgr.import_data(data_file_path, '1.0.0')
 
 # Manually add five uuids to the Signals table
 for i in range(5):

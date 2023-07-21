@@ -9,29 +9,81 @@ Dependencies
 ------------
 
 This tool uses Python, Django, SQLite3, pyyaml for database management. To install dependencies, it is recommended to first create a virtual environment. To create a virtual environment, run the following command:
-```bash
-python3 -m venv <path/to/new/virtual/environment>
-```
+
+.. code-block:: console
+
+    python3 -m venv <path/to/new/virtual/environment>
+
 To activate the virtual environment, run the following command:
-```bash
-source <path/to/new/virtual/environment>/bin/activate
-```
+
+.. code-block:: console
+
+    source <path/to/new/virtual/environment>/bin/activate
+
 To deactivate the virtual environment, run the following command:
-```bash
-deactivate
-```
+
+.. code-block:: console
+
+    deactivate
 
 A requirements.txt file is provided in the repository. To install the dependencies, run the following command:
-```bash
-pip install -r requirements.txt
-```
-Verify Django installation by going into python terminal:
-```python
->>> import django
->>> print(django.get_version())
-```
 
-SQLite3 is not directly available through pip. Install SQLite3 from [official website](https://www.sqlite.org/download.html) for viewing the data tables.
+.. code-block:: console
+
+    pip install -r requirements.txt
+
+Verify Django installation by going into python terminal:
+
+.. code-block:: python
+
+    >>> import django
+    >>> print(django.get_version())
+
+
+SQLite3 is not directly available through pip (in Windows at least). Install SQLite3 from [official website](https://www.sqlite.org/download.html) for viewing the data tables.
+
+For developers
+--------------
+
+The `main` branch is the stable branch. 
+
+The `dev` branch is the develop branch where the latest changes are pushed.
+
+The `pyproject.toml` file is a configuration for the `tidy_interface` package. 
+
+The `readthedocs-pyproject.toml` file is a configuration for the documentation.
+
+The `MANIFEST.in` file is a configuration for the package to include extra files such as example data.
+Inside the MANIFEST.in file, specify the .csv file (or any other files you want to include) using the include directive.
+
+Please maintain a clean file structure as the following:
+
+.. code-block:: console
+
+    tidy_interface/
+    |-- tidy_interface/
+    |   |-- __init__.py
+    |   |-- signal_manager.py
+    |   |-- other_potential_modules.py
+    |   |-- examples/
+    |       |-- example.py
+    |   |-- example_data/
+    |   |   |-- example_file.csv
+    |-- docs/
+    |-- prototyping/
+    |-- tests/
+    |-- README.rst
+    |-- LICENSE
+    |-- setup.py
+    |-- pyproject.toml
+    |-- readthedocs-pyproject.toml
+    |-- requirements.txt
+    |-- MANIFEST.in
+    |-- dist/
+    |   |-- tidy_interface-0.1.1.tar.gz
+    |-- tidy_interface.egg-info/
+    |   |-- ...
+    |-- .gitignore
 
 .. |docs| image:: https://readthedocs.org/projects/tidy-interface/badge/?version=stable
     :target: https://tidy-interface.readthedocs.io/en/latest/?badge=stable

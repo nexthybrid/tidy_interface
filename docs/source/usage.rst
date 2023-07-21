@@ -14,7 +14,9 @@ To use tiny_interface, first install it using pip (TBD):
 
 The above python package installation is TBD. For now, you can install the package by cloning the repository and running the following command from the root directory of the repository:
 
-This tool uses Python, Django, SQLite3, pyyaml for database management. To install dependencies, it is recommended to first create a virtual environment. To create a virtual environment, run the following command:
+This tool uses Python, Django, SQLite3, pyyaml for database management. While pyyaml is included in the package installation, sqlite3 is not, as it is not directly available in Windows through pip. SQLite3 can be installed from [official website](https://www.sqlite.org/download.html).
+
+To install dependencies, it is recommended to first create a virtual environment. To create a virtual environment, run the following command:
 
 .. code-block:: console
 

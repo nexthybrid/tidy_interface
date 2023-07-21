@@ -2,3 +2,4 @@ sphinx
 sphinx-rtd-theme==1.2.2
 django
 pyyaml
+pysqlite3

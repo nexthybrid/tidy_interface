@@ -1,14 +1,8 @@
-[build-system]
-requires = ["sphinx", "sphinx-rtd-theme"]
-build-backend = "sphinx.build_api"
-
-[tool.sphinx.conf]
-master_doc = "index"
-
-[tool.sphinx.autodoc]
-members = true
-
 [project]
-name = "tiny_interface"
-authors = [{name = "Tong Zhao", email = "zhao.1991@osu.edu"}]
-dynamic = ["version", "description"]
+name = "tidy_interface"
+version = "0.1.1"
+description = "An interface signal management tool."
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"

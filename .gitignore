@@ -1,4 +1,7 @@
 
+# Local folders to ignore
+useful_tips/
+
 # VS code folder
 .vscode
 

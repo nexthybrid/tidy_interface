@@ -8,7 +8,7 @@ tidy_interface
 Dependencies
 ------------
 
-This tool uses Python, Django, SQLite3, pyyaml for database management. If you access this tool through `pip install tidy-interface`, then you do not need to worry about manually installing dependencies.
+This tool uses Python, Django, SQLite3, pyyaml for database management. If you access this tool through ``pip install tidy-interface``, then you do not need to worry about manually installing dependencies.
 
 For developers, you may want to build this tool from source. In this case, you'll need to mannually install dependencies. 
 
@@ -27,6 +27,7 @@ To activate the virtual environment, run the following command:
     source <path/to/new/virtual/environment>/bin/activate
 
 (In Windows)
+
 .. code-block:: console
 
     <path/to/new/virtual/environment>/Scripts/activate

@@ -57,7 +57,7 @@ SQLite3 is **not directly available through pip** (in Windows at least). Install
 For developers
 --------------
 
-The ``main`` branch is the stable branch. 
+The ``main`` branch is the stable branch. Merged pull requests on main will be tagged with a version number (and pushed to PyPI later).
 
 The ``dev`` branch is the develop branch where the latest changes are pushed.
 

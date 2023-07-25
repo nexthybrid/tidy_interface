@@ -97,6 +97,16 @@ Please maintain a clean file structure as the following:
     |   |-- ...
     |-- .gitignore
 
+To install an unofficial version of the package, e.g., the current ``dev`` branch, run the following command:
+
+.. code-block:: console
+
+    git checkout dev
+    python3 setup.py sdist
+    pip install dist/tidy_interface-x.x.x.tar.gz
+
+The ``x.x.x`` is the auto-generated version number.
+
 .. |docs| image:: https://readthedocs.org/projects/tidy-interface/badge/?version=stable
     :target: https://tidy-interface.readthedocs.io/en/latest/?badge=stable
     :alt: Documentation Status (stable)

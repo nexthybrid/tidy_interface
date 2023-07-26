@@ -107,6 +107,6 @@ To install an unofficial version of the package, e.g., the current ``dev`` branc
 
 The ``x.x.x`` is the auto-generated version number.
 
-.. |docs| image:: https://readthedocs.org/projects/tidy-interface/badge/?version=stable
-    :target: https://tidy-interface.readthedocs.io/en/latest/?badge=stable
-    :alt: Documentation Status (stable)
+.. |docs| image:: https://readthedocs.org/projects/tidy-interface/badge/?version=latest
+    :target: https://tidy-interface.readthedocs.io/en/latest/?badge=latest
+    :alt: Documentation Status (latest)

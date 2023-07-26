@@ -57,7 +57,7 @@ SQLite3 is **not directly available through pip** (in Windows at least). Install
 For developers
 --------------
 
-The ``main`` branch is the stable branch. 
+The ``main`` branch is the stable branch. Merged pull requests on main will be tagged with a version number (and pushed to PyPI later).
 
 The ``dev`` branch is the develop branch where the latest changes are pushed.
 
@@ -97,6 +97,16 @@ Please maintain a clean file structure as the following:
     |   |-- ...
     |-- .gitignore
 
-.. |docs| image:: https://readthedocs.org/projects/tidy-interface/badge/?version=stable
-    :target: https://tidy-interface.readthedocs.io/en/latest/?badge=stable
-    :alt: Documentation Status (stable)
+To install an unofficial version of the package, e.g., the current ``dev`` branch, run the following command:
+
+.. code-block:: console
+
+    git checkout dev
+    python3 setup.py sdist
+    pip install dist/tidy_interface-x.x.x.tar.gz
+
+The ``x.x.x`` is the auto-generated version number.
+
+.. |docs| image:: https://readthedocs.org/projects/tidy-interface/badge/?version=latest
+    :target: https://tidy-interface.readthedocs.io/en/latest/?badge=latest
+    :alt: Documentation Status (latest)

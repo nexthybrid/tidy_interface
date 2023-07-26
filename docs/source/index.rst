@@ -14,6 +14,7 @@ Contents
    :caption: Contents:
 
    usage
+   data_tables
 
 
 * :ref:`genindex`

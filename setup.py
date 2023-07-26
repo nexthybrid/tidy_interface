@@ -6,7 +6,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='tidy_interface',
-    version='0.1.1',
+    version='0.1.2',
     author='Tong Zhao',
     author_email='zhao.1991@osu.edu',
     description='An interface signal management tool.',

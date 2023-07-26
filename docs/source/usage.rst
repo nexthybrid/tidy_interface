@@ -57,8 +57,8 @@ Verify Django installation by going into python terminal:
 
 .. code-block:: python
 
-    >>> import django
-    >>> print(django.get_version())
+    import django
+    print(django.get_version())
 
 SQLite3 is not directly available through pip. Install SQLite3 from [official website](https://www.sqlite.org/download.html) for viewing the data tables.
 
@@ -73,9 +73,9 @@ For example:
 
 .. code-block:: python
 
-    >>> from tiny_interface import signalManager
-    >>> mgr = signalManager()
-    >>> mgr.create_database()
+    from tidy_interface.signal_mamager import signalManager
+    mgr = signalManager()
+    mgr.create_database()
 
 Import signals from CSV file
 ----------------------------
@@ -86,9 +86,9 @@ For example:
 
 .. code-block:: python
 
-    >>> from tiny_interface import signalManager
-    >>> mgr = signalManager()
-    >>> mgr.import_data(csv_file, software_version)
+    from tidy_interface.signal_mamager import signalManager
+    mgr = signalManager()
+    mgr.import_data(csv_file, software_version)
 
 The ``csv_file`` argument is the path to the CSV file containing the signals. The ``software_version`` argument is the version of the software for which the signals are being imported.
 
@@ -147,3 +147,32 @@ The code below performs the following tasks:
     mgr.export_signals('1.0.0', 'signals.yaml')
     mgr.export_signals_csv('1.1.0', 'signals.csv')
 
+
+Modify Columns in SignalVersions Table
+--------------------------------------
+
+To modify columns in the SignalVersions table, use the ``signalManager.reset_signalVersions_columns()`` function and the ``signalManager.add_signalVersions_column()`` function.
+
+For example:
+
+.. code-block:: python
+
+    from tidy_interface.signal_mamager import SignalManager
+    mgr = SignalManager()
+    mgr.create_database()
+    mgr.reset_signalVersions_columns()
+    mgr.add_signalVersions_column('signal_name')
+    mgr.add_signalVersions_column('signal_category')
+    mgr.add_signalVersions_column('default_value')
+    mgr.add_signalVersions_column('size')
+    mgr.add_signalVersions_column('special_notes')
+
+By default, these added column will be of ``TEXT`` type.
+
+After the change, the database needs to be reloaded. If the database already contains data, the data in the ``SignalVersions`` table will be lost after reloading the database.
+
+.. code-block:: python
+
+    mgr.reload_database()
+
+In planned future releases (TBD), the user can reload the database without losing data, but the user will be noticed that any data whose column name does not match the new column name will be lost. To ensure that the data is not lost, the user can rename the changed column names before reloading the database.
